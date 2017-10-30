@@ -1,19 +1,43 @@
-import generateServices from './lib/generateServices';
-import config from './lib/config';
-import request from './lib/request';
-import PropTypes from './lib/types';
-import message from './lib/component/message';
-import Auth from './lib/model/Auth';
+'use strict';
 
-const model = {
-  Auth
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.model = exports.message = exports.PropTypes = exports.request = exports.config = exports.generateServices = undefined;
+
+var _generateServices = require('./lib/generateServices');
+
+var _generateServices2 = _interopRequireDefault(_generateServices);
+
+var _config = require('./lib/config');
+
+var _config2 = _interopRequireDefault(_config);
+
+var _request = require('./lib/request');
+
+var _request2 = _interopRequireDefault(_request);
+
+var _types = require('./lib/types');
+
+var _types2 = _interopRequireDefault(_types);
+
+var _message = require('./lib/component/message');
+
+var _message2 = _interopRequireDefault(_message);
+
+var _Auth = require('./lib/model/Auth');
+
+var _Auth2 = _interopRequireDefault(_Auth);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var model = {
+  Auth: _Auth2.default
 };
 
-export {
-  generateServices,
-  config,
-  request,
-  PropTypes,
-  message,
-  model
-}
+exports.generateServices = _generateServices2.default;
+exports.config = _config2.default;
+exports.request = _request2.default;
+exports.PropTypes = _types2.default;
+exports.message = _message2.default;
+exports.model = model;
